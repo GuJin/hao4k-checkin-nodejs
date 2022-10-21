@@ -36,13 +36,13 @@ jobs:
       # 设置环境变量，不同语言获取环境变量方式不同
       env: 
         SCKEY: ${{ secrets.SCKEY }}
-        COOKIE: ${{ secrets.COOKIE }}
-        SJCOOKIE: ${{ secrets.SJCOOKIE }}
+        COOKIE: ${os.environ["HAO4K_COOKIE"]}
+        SJCOOKIE: ${os.environ["SJ4K_COOKIE"]}
         PPTOKEN : ${{ secrets.PPTOKEN }}
         PDKEY : ${{ secrets.PDKEY  }}
         BARKKEY : ${{ secrets.BARKKEY  }}
         BARKSERVER : ${{ secrets.BARKSERVER  }}
-        CHECKHOST : ${{ secrets.CHECKHOST  }}
+        CHECKHOST : ${hao4k,4ksj}
 
 
 
